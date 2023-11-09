@@ -1,0 +1,20 @@
+table {
+    color: blueviolet;
+}
+
+#list {
+    color: orange;
+}
+
+.red{
+    color: red;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+
+.container{
+    border: 1px;
+}
