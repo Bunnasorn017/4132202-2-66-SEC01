@@ -7,9 +7,9 @@
 
     <label for="inp_prov">Province :</label>
     <input type="text" name="prov" id="inp_prov"><br>
-
-    <button type="submit"> SAVE </button>
-    <button type="reset"> CANCLE </button>
+    <hr>
+    <button type="submit" class="btn btn-primary"> SAVE </button>
+    <button type="reset" class="btn btn-danger"> CANCLE </button>
 </form>
 
 <script>
@@ -24,8 +24,10 @@
             success: function(res) {
                 if (res == "Error")
                     alert("Don't insert data into DB.")
-                else
+                else{
                     $("#div_item").load("/listitem.php");
+                    
+                }
             }
         });
     });
